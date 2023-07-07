@@ -2,18 +2,16 @@
 using static System.Console;
 
 Clear();
-Write("Enter M: ");
-int M = Convert.ToInt32(ReadLine());
 Write("Enter N: ");
 int N = Convert.ToInt32(ReadLine());
 
-WriteLine(PrintNumbers(M, N));
+WriteLine(PrintNumbers(N));
 
-string PrintNumbers(int M, int N)
+string PrintNumbers(int N)
 {
-    if (N == M)
+    if (N == 1)
     {
         return N.ToString();
     }
-    return (N + " " + PrintNumbers(M, N - 1));
+    return (N + " " + PrintNumbers(N - 1));
 }
