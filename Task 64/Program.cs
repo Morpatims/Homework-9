@@ -12,8 +12,8 @@ WriteLine(PrintNumbers(M, N));
 string PrintNumbers(int M, int N)
 {
     if (N == M)
-    { 
-    return N.ToString();
+    {
+        return N.ToString();
     }
     return (N + " " + PrintNumbers(M, N - 1));
 }

@@ -12,8 +12,8 @@ WriteLine($"Sum of numbers = {SumNumbers(M, N)}");
 int SumNumbers(int M, int N)
 {
     if (M == N)
-    { 
-    return M;
+    {
+        return M;
     }
     return (M + SumNumbers(M + 1, N));
 }
